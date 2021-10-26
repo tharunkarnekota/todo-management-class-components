@@ -51,20 +51,11 @@ export class App extends Component {
   render() {
     return (
       <div>
-
-        <div className="developer">
-          <span>Developer</span><br />
-          <a href="https://github.com/tharunkarnekota">Tharun karnekota</a>
-        </div>
-
         <h1 className="heading">Todo Management Appilication</h1>
-
-        <div className="todos">
         {this.state.todos.map(todo => (
           <Todo key={todo.id} todo={todo}  completeTodo={(id)=>this.completeTodo(id)} deleteTodo={(id)=>this.deleteTodo(id)}/>
         )
         )}
-        </div>
         
         <TodoForm addTodo={(todo) => this.addTodo(todo)} />
         

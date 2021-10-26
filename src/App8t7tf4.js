@@ -52,11 +52,7 @@ export class App extends Component {
     return (
       <div>
 
-        <div className="developer">
-          <span>Developer</span><br />
-          <a href="https://github.com/tharunkarnekota">Tharun karnekota</a>
-        </div>
-
+        
         <h1 className="heading">Todo Management Appilication</h1>
 
         <div className="todos">
